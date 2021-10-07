@@ -3,6 +3,10 @@
 
 new pc eh? maybe you should automate the task of installing all of your favorite software....
 
+This is the process consumers have to deal with when purchasing a new laptop, why not stream line that process and get back to enjoying your PC. Run the included scripts and enjoy web development with all the fixings.
+
+
+
 [Powershell Basics](https://blog.netwrix.com/2018/02/21/windows-powershell-scripting-tutorial-for-beginners/)
 [Chocolatey Installation](https://chocolatey.org/install)
 
@@ -27,6 +31,3 @@ new pc eh? maybe you should automate the task of installing all of your favorite
 **Create Arrays in bash**
 
 [Create an Array in Bash](https://www.freecodecamp.org/news/bash-array-how-to-declare-an-array-of-strings-in-a-bash-script/)
-
-
-
