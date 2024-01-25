@@ -37,54 +37,55 @@ Write-Host "============================"
     Start-Sleep -s 5
     Start-Process https://az764295.vo.msecnd.net/stable/7f6ab5485bbc008386c4386d08766667e155244e/VSCodeUserSetup-x64-1.60.2.exe
 
-     Write-Host "============================"
-     Start-Sleep -s 5
-     Write-Host "Installing Development Software with Chocolatey"
-     Start-Sleep -s 10
-     <# Create an array of all the packages needed.... #>
-     $chocolatyTreats = @(
-         "postman",
-         "spotify",
-         "intellijidea-ultimate",
-         "wildfly"
-         )
-     Foreach ($treat in $chocolatyTreats)
-     {
-         Start-Sleep -s 5
-         Write-Host "Installing $($treat)..."
-         Write-Host "============================"
-         choco install $($treat)
-         Write-Host "============================"
-         Start-Sleep -s 5
-     }
- 
-     Start-Sleep -s 5
-     Write-Host "Installing programming languages and extensions..."
-     Write-Host "============================"
- 
-     $chocolatySnacks = @(
-         "nodejs",
-         "python",
-     )
- 
-     Foreach ($snack in $chocolatySnacks)
-     {
-         Start-Sleep -s 5
-         Write-Host "Installing $($snack)..."
-         Write-Host "============================"
-         choco install $($snack)
-         Start-Sleep -s 5
-         Write-Host "============================"
-     }
+    Write-Host "============================"
+    Start-Sleep -s 5
+    Write-Host "Installing Development Software with Chocolatey"
+    Start-Sleep -s 10
+    <# Create an array of all the packages needed.... #>
+    $chocolatyTreats = @(
+        "postman",
+        "spotify",
+        "intellijidea-ultimate",
+        "wildfly",
+        "maven"
+        )
+    Foreach ($treat in $chocolatyTreats)
+    {
+        Start-Sleep -s 5
+        Write-Host "Installing $($treat)..."
+        Write-Host "============================"
+        choco install $($treat)
+        Write-Host "============================"
+        Start-Sleep -s 5
+    }
 
-     Start-Sleep -s 5
-     Write-Host "Finished Installing Software and Programing Languages..."
-     Write-Host "========================================================="
-     Write-Host "Execute ./dev-npm-modules.sh to install global npm packages..."
-     Start-Sleep -s 10
-     Start-Process "C:\Program Files\Git\git-bash.exe"
-     Write-Host "Happy Coding :)"
-}
+    Start-Sleep -s 5
+    Write-Host "Installing programming languages and extensions..."
+    Write-Host "============================"
+
+    $chocolatySnacks = @(
+        "nodejs",
+        "python"
+    )
+
+    Foreach ($snack in $chocolatySnacks)
+    {
+        Start-Sleep -s 5
+        Write-Host "Installing $($snack)..."
+        Write-Host "============================"
+        choco install $($snack)
+        Start-Sleep -s 5
+        Write-Host "============================"
+    }
+
+    Start-Sleep -s 5
+    Write-Host "Finished Installing Software and Programing Languages..."
+    Write-Host "========================================================="
+    Write-Host "Execute ./dev-npm-modules.sh to install global npm packages..."
+    Start-Sleep -s 10
+    Start-Process "C:\Program Files\Git\git-bash.exe"
+    Write-Host "Happy Coding :)"
+
 
 
 

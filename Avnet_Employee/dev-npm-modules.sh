@@ -19,7 +19,7 @@ done
         echo "done.. enjoy your new PC"
 
 # move the wildfly installation to another personal directory workspace.
-# /c/ProgramData/chocolatey/lib mkdir workspace
+# cd /c/ProgramData/chocolatey/lib mkdir workspace mv wildfly     
 
 
 
