@@ -4,7 +4,7 @@ echo "installing global npm dev modules"
 echo "================================"
 
 # modules array: 
-npmDevModules=("nativescript" "@angular/cli" "create-react-app" "@vue/cli")
+npmDevModules=("volta" "@angular/cli")
 
 for module in ${npmDevModules[@]}; do
         echo "installing $module module..."
@@ -17,6 +17,10 @@ for module in ${npmDevModules[@]}; do
 done
 
         echo "done.. enjoy your new PC"
+
+# move the wildfly installation to another personal directory workspace.
+# /c/ProgramData/chocolatey/lib mkdir workspace
+
 
 
 
